@@ -1,0 +1,59 @@
+.container {
+  display: grid;
+  max-width: 80vw;
+  height: 400px;
+  margin: 10% auto;
+  /* border: 1px solid black; */
+  grid-template-areas:
+  "from . stamp"
+  ". to ."
+  ". . .";
+  grid-template-columns: 30% 1fr 20%;
+  grid-template-rows: 1fr 40% 1fr;
+  background-color: rgb(250, 250, 256);
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, .3);
+}
+
+.fromlabel, .tolabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  padding: 20px;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 150%;
+  justify-self: start;
+}
+
+.fromlabel {
+  grid-area: from;
+}
+
+.tolabel {
+  grid-area: to;
+  justify-self: center;
+  align-self: end;
+}
+
+.stamp {
+  grid-area: stamp;
+  justify-self: end;
+  width: 80px;
+  height: 20px;
+  padding: 35px 0;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #082742;
+  color: white;
+  margin: 10px;
+}
+
+p {
+  margin: 0;
+  font-family: cursive;
+}
+
+.cityStateZip {
+  display: flex;
+}

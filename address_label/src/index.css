@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  width: 30%;
+  padding: 20px;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+.label p:first-child {
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+.cityStateZip {
+  display: flex;
+}

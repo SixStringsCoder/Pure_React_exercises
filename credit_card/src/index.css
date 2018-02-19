@@ -1,0 +1,86 @@
+body {
+  color: #fff;
+}
+
+p {
+  margin: 0;
+  font-family: serif;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.creditCard {
+  display: grid;
+  max-width: 21vw;
+  height: 200px;
+  border-radius: 15px;
+  margin: 10% auto;
+  padding: 5px 20px;
+  /* border: 1px solid black; */
+  grid-template-areas:
+  "bank"
+  "card_no"
+  "card_sec_no"
+  "date"
+  "name";
+  grid-template-columns: 100%;
+  grid-template-rows: 45% 1fr 5% 1fr 1fr;
+  background-color: hsla(213, 53%, 40%, 1);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+
+
+.bankName {
+  grid-area: bank;
+  justify-self: end;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+.cardNo {
+  grid-area: card_no;
+  font-size: 1.5rem;
+  justify-self: center;
+  letter-spacing: 1px;
+}
+
+.cardSecNo {
+  grid-area: card_sec_no;
+  font-size: .8rem;
+  font-family: "Helvetica", arial, sans-serif;;
+  justify-self: start;
+  padding-left: 1rem;
+}
+
+.expDate {
+  grid-area: date;
+  justify-self: center;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.valid {
+  text-transform: uppercase;
+  font-size: 8px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span {
+  line-height: -10px;
+}
+
+.date {
+  font-size: 1.3rem;
+  letter-spacing: .2rem;
+}
+
+.fullName {
+  grid-area: name;
+  font-size: 1.1rem;
+  justify-self: start;
+  margin-top: 7px;
+  padding-left: 1rem;
+  text-transform: uppercase;
+}

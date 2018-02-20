@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-size: 16px;
+}
+
+.poster {
+  display: grid;
+  max-width: 100vw;
+  height: 100vh;
+  padding: 3% 0 0 0;
+  border: 2px solid #55ade4;
+  grid-template-areas:
+  "image"
+  "title"
+  "text";
+  grid-template-columns: 100%;
+  grid-template-rows: 60% 15% 25%;
+  justify-items: center;
+  align-items: center;
+}
+
+.imageBox {
+  grid-area: image;
+  width: 45vw;
+  padding: 0 10%;
+  border: 1px solid #55ade4;
+}
+
+.image {
+  width: 45vw;
+  margin: auto;
+}
+
+.title {
+  grid-area: title;
+  align-self: center;
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+  text-transform: uppercase;
+  font-size: 7rem;
+  color: #55ade4;
+}
+
+.text {
+  grid-area: text;
+  margin: 0;
+  align-self: stretch;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  transform:scale(1.4,.8);
+  letter-spacing: 2px;
+  color: #FFF;
+}

@@ -30,7 +30,6 @@ const FileListItem = ({ file }) => {
       <FileName file={file.name} />
       <CommitMessage commit={file.latestCommit} />
       <Time time={file.updated_at} />
-
     </tr>
   );
 }
@@ -50,11 +49,9 @@ FileName.propTypes = {
 
 /* =========return objects' type (of icon) value==========*/
 const FileIcon = ({ file }) => {
-  let icon = '';
+  let icon = 'fa-file-text-o';
   if (file.type === 'folder') {
     icon = 'fa-folder';
-  } else {
-    icon = 'fa-file-text-o';
   }
 
   return (
@@ -77,11 +74,11 @@ CommitMessage.propTypes = {
   commit: PropTypes.object.isRequired
 }
 
-/* =========================================================*/
+/* ===============return Latest Commit message===========================*/
 const Time = ({ time }) => {
   const timeString = moment(time.updated_at).fromNow();
   return (
-    <td className="time">
+    <td className="age">
       {timeString}
     </td>
   );
@@ -93,7 +90,7 @@ Time.propTypes = {
 /* Test Array */
 const testFiles = [
   {
-    id: 'testFiles' + 1,
+    id: 1,
     name: 'src',
     type: 'folder',
     updated_at: "2016-07-11 21:24:00",
@@ -102,7 +99,7 @@ const testFiles = [
     }
   },
   {
-    id: 'testFiles' + 2,
+    id: 2,
     name: 'tests',
     type: 'folder',
     updated_at: "2016-07-11 21:24:00",
@@ -111,7 +108,7 @@ const testFiles = [
     }
   },
   {
-    id: 'testFiles' + 3,
+    id: 3,
     name: 'README',
     type: 'file',
     updated_at: "2016-07-18 21:24:00",

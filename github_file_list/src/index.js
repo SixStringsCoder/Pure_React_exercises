@@ -22,12 +22,12 @@ FileList.propTypes = {
   files: PropTypes.array.isRequired,
 }
 
-// Accept objects; return table rows of objects 'name' values
+// Accepts objects as input; returns table rows of values from objects
 const FileListItem = ({ file }) => {
   return (
     <tr className="file-list-item">
-      <FileIcon file={file.type} />
-      <FileName file={file.name} />
+      <FileIcon file={file} />
+      <FileName file={file} />
       <CommitMessage commit={file.latestCommit} />
       <Time time={file.updated_at} />
     </tr>
@@ -40,11 +40,11 @@ FileListItem.propTypes = {
 /* =========return objects' name value===================*/
 const FileName = ({ file }) => {
   return (
-    <td className="file-name">{file}</td>
+    <td className="file-name">{file.name}</td>
   )
 }
 FileName.propTypes = {
-  file: PropTypes.string.isRequired
+  file: PropTypes.object.isRequired
 }
 
 /* =========return objects' type (of icon) value==========*/
@@ -61,10 +61,10 @@ const FileIcon = ({ file }) => {
   );
 }
 FileIcon.propTypes = {
-  file: PropTypes.string.isRequired
+  file: PropTypes.object.isRequired
 }
 
-/* =========================================================*/
+/* ============return Latest Commit message====================*/
 const CommitMessage = ({ commit }) => {
   return (
     <td className="commit-message">{commit.message}</td>
@@ -74,7 +74,7 @@ CommitMessage.propTypes = {
   commit: PropTypes.object.isRequired
 }
 
-/* ===============return Latest Commit message===========================*/
+/* ===============return Time formatted with Moment.js================*/
 const Time = ({ time }) => {
   const timeString = moment(time.updated_at).fromNow();
   return (

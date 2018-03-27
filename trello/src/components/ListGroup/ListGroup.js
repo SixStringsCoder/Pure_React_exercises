@@ -17,3 +17,7 @@ export const ListGroup = ({list}) => {
       </div>
     );
 }
+
+ListGroup.propTypes = {
+  list: PropTypes.object.isRequired
+}

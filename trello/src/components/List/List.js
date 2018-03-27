@@ -14,3 +14,7 @@ export const List = ({lists}) => {
         </section>
     );
 }
+
+List.propTypes = {
+  lists: PropTypes.array.isRequired
+}

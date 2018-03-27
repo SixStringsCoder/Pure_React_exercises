@@ -15,3 +15,7 @@ export const Card = ({list}) => {
       </div>
     );
 }
+
+Card.propTypes = {
+  list: PropTypes.object.isRequired
+}

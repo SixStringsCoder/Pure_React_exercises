@@ -11,3 +11,7 @@ export const ListTitle = ({list}) => {
       </div>
     );
 }
+
+ListTitle.propTypes = {
+  list: PropTypes.object.isRequired
+}

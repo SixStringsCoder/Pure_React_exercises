@@ -1,4 +1,4 @@
-##### Pure React Assignment: 
+##### Pure React Assignment:
 Render a row of Trello-like cards side-by-side.
 
 Created by Steve Hanlon March 26, 2018

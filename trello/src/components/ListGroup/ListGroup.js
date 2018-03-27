@@ -8,7 +8,7 @@ import { AddCard } from '../AddCard/AddCard'
 
 export const ListGroup = ({list}) => {
     return (
-      <div>
+      <div class="list-group">
         <ListTitle list={list} />
 
         <Card list={list} />

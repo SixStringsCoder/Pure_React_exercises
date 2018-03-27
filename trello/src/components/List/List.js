@@ -5,12 +5,12 @@ import { ListGroup } from '../ListGroup/ListGroup';
 
 export const List = ({lists}) => {
     return (
-      <section className="list" >
-        {
-          lists.map((list, index) =>
-            <ListGroup list={list} key={index} />
-          )
-        }
-      </section>
+        <section className="list" >
+          {
+            lists.map((list, index) =>
+              <ListGroup list={list} key={index} />
+            )
+          }
+        </section>
     );
 }

@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+.list-group {
+  width: 20rem;
+  margin: 1.5rem;
+  padding: .7rem;
+  background-color: #ddd;
+}
+
+.list-title {
+  display: flex;
+  justify-content: space-between;
+  width: 22vw;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.action-icon {
+  color: gray;
+  font-weight:bold;
+}
+
+.project-name {
+  background-color: white;
+  width: 90%;
+  border-radius: 5px;
+  padding: .6rem .7rem;
+}
+
+.add-card {
+  padding: 8px 0 0 0;
+}
+
+.add-card-title {
+  margin: 0;
+  color: gray;
+}

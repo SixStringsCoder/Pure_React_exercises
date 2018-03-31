@@ -3,6 +3,34 @@ body {
   margin: 0;
 }
 
+#hacker-header {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fd6c05;
+}
+
+#hacker-logo {
+  font-size: .8rem;
+  color: #FFF;
+  border: 1px solid white;
+  padding: 2px 4px;
+}
+
+#hacker-title {
+  font-size: .9rem;
+  margin: 0 0 0 10px;
+  font-weight: bolder;
+}
+
+.hacker-nav {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+  list-style: none;
+  font-size: .8rem;
+}
+
 .container {
   margin: 0;
   display: flex;
@@ -41,7 +69,7 @@ header {
 
 .article-title {
   margin: 0 5px;
-  font-size: 1.1rem;
+  font-size: .9rem;
   width: 100%;
 }
 

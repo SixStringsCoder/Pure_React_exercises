@@ -5,29 +5,47 @@ import './Article.css';
 
 export const Article = ({articles}) => {
     return (
-      <main className="container">
-        <article className="article" role="article">
-          <header role="banner">
-            <span className="id" aria-label="id number">1.</span>
-            <span className="arrow">&#x25B2;</span>
-            <h3 className="article-title">Why I am Suing the US Government</h3>
-            <span className="article-website">(bunniestudios.com)</span>
-          </header>
-
-          <footer role="contentinfo">
-            <ul className="footer-info">
-              <li>13464 points</li>
-              <li>by ivank</li>
-              <li>11 hours ago</li>
-              <li>flag</li>
-              <li>hide</li>
-              <li>257 comments</li>
-              <li>instapaper</li>
-              <li>save to pocket</li>
+      <section>
+        <header id="hacker-header">
+          <span id="hacker-logo">Y</span>
+          <h3 id="hacker-title">Hacker News</h3>
+          <nav>
+            <ul className="hacker-nav">
+              <li>news</li>
+              <li>threads</li>
+              <li>comments</li>
+              <li>show</li>
+              <li>ask</li>
+              <li>jobs</li>
+              <li>submit</li>
             </ul>
-          </footer>
-        </article>
-      </main>
+          </nav>
+        </header>
+
+        <main className="container">
+          <article className="article" role="article">
+            <header role="banner">
+              <span className="id" aria-label="id number">1.</span>
+              <span className="arrow">&#x25B2;</span>
+              <h3 className="article-title">Why I am Suing the US Government</h3>
+              <span className="article-website">(bunniestudios.com)</span>
+            </header>
+
+            <footer role="contentinfo">
+              <ul className="footer-info">
+                <li>13464 points</li>
+                <li>by ivank</li>
+                <li>11 hours ago</li>
+                <li>flag</li>
+                <li>hide</li>
+                <li>257 comments</li>
+                <li>instapaper</li>
+                <li>save to pocket</li>
+              </ul>
+            </footer>
+          </article>
+        </main>
+      </section>
     );
 }
 

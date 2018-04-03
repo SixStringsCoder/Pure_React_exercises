@@ -2,18 +2,19 @@ import React from 'react';
 import '../Articles/Articles.css';
 
 
-export const HackerNav = ({children}) => {
+export const ArticleInfoRow = ({children}) => {
     let items = React.Children.toArray(children);
     for(let i = items.length - 1; i >= 1; i--) {
       items.splice(i, 0,
-      <span key={i} className="separator">&#9775;</span>)
+        <span key={i} className="info-separator">&#9961;</span>
+      );
     }
 
     return (
-      <nav>
-        <ul className="hacker-nav">
+      <footer role="contentinfo">
+        <ul className="footer-info">
           {items}
         </ul>
-      </nav>
+      </footer>
     );
 }

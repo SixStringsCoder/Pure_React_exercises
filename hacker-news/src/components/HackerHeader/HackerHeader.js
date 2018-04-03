@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../Articles/Articles.css';
 import { HackerNav } from '../HackerNav/HackerNav';
 

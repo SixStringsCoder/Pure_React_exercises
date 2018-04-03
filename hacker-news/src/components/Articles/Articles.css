@@ -85,7 +85,6 @@ header {
   margin: 0;
 }
 
-
 footer {
   display: flex;
   justify-content: flex-start;
@@ -95,7 +94,14 @@ footer {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  width: 35vw;
+  align-items: flex-end;
+  width: 40vw;
   list-style: none;
   font-size: .7rem;
+}
+
+.info-separator {
+  font-size: .5rem;
+  align-self: flex-end;
+  color: black;
 }

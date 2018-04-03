@@ -2,26 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../Articles/Articles.css';
 import { Article } from '../Article/Article';
-// import { AddCard } from '../AddCard/AddCard'
+import { ArticleInfoRow } from '../ArticleInfoRow/ArticleInfoRow';
 
 
 export const ArticleFooter = ({article}) => {
     return (
-      <footer role="contentinfo">
-        <ul className="footer-info">
-          <li>{article.points}</li>
-          <li>{article.byline}</li>
-          <li>{article.time}</li>
-          <li>flag</li>
-          <li>hide</li>
-          <li>{article.comments}</li>
-          <li>instapaper</li>
-          <li>save to pocket</li>
-        </ul>
-      </footer>
+      <ArticleInfoRow>
+        <li>{article.points} points</li>
+        <li>by {article.byline}</li>
+        <li>{article.time}</li>
+        <li>flag</li>
+        <li>hide</li>
+        <li>{article.comments} comments</li>
+        <li>instapaper</li>
+        <li>save to pocket</li>
+      </ArticleInfoRow>
+
     );
 }
 
 ArticleFooter.propTypes = {
-  list: PropTypes.object.isRequired
+  article: PropTypes.object.isRequired
 }

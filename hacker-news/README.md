@@ -1,12 +1,14 @@
 ##### Pure React Assignment:
-Render a row of Trello-like cards side-by-side.
+Render a row of HackerNews-like website of news articles
 
-Created by Steve Hanlon March 26, 2018
+Created by Steve Hanlon April 2, 2018
 
-![Trello Components Sample](trello_comps.png)
+![HackerNews Components Sample](hacker_ex.png)
 
 ##### Workflow:
-- work out a rough HTML sample of Trello card
-- Break Trello sample into components
-- incorporate Flexbox and other styling
-- add more objects to render more cards to DOM
+- work out a HTML and CSS sample of single article post
+- add HTML and CSS for Hacker Header
+- Break into components
+- Final CSS styling using FlexBox for layout
+- add React .toArray for Nav and Footer children to add symbols between <li> elements
+- add more objects to render more articles to DOM

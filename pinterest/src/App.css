@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.app {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 30% 10% 60%;
+}
+
+.account-header {
+  grid-area: 1 / 4 / span 1 / span 2;
+  text-align: center;
+  width: 42vw;
+  height: 23vh;
+  margin-top: 30px;
+}
+
+.navigation {
+  grid-area: 2 / 1 / span 1 / span 11;
+  width: 100vw;
+  height: 5vh;
+  margin: 3vh 0 0 0;
+  box-shadow: 0 6px 4px -4px black;
+  border-top: 1px solid #EEE;
+  border-bottom: 2px solid black;
+  padding: 20px 0 35px;
+}
+
+.boards-container {
+  grid-area: 3 / 1 / span 1 / span 12;
+  height: 55vh;
+  background-color: #DDD;
+  padding: 20px;
+}
+
+/* ==============================
+    Individual Board Layout
+=================================*/
+article {
+  width: 20%;
+  background-color: white;
+  padding: 5px;
+  border-ratio: 10px;
+  box-shadow: 0 0 2px black;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 20%, 40%, 20%, 20%;
+  /* grid-gap: 10px; */
+  grid-template-areas:
+  "art_header art_header art_header"
+  "art_img_sec art_img_sec art_img_sec"
+  "art_img_sec art_img_sec art_img_sec"
+  "art_footer art_footer art_footer";
+}
+
+.article-header {
+  grid-area: art_header;
+  margin: 5px 5px;
+}
+
+.topic-header {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.article-account-name {
+  font-size: .8rem;
+  color: gray;
+}
+
+/*==============================*/
+.article-img-section {
+  grid-area: art_img_sec;
+}
+
+.top-image-cont {
+
+}
+
+.bottom-image-cont {
+
+}
+
+.article_images {
+
+}
+
+/*==============================*/
+.article-footer {
+  grid-area: art_footer;
+}
+
+.follow-btn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: darkred;
+  background-color: #EEE;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+
+
+/* Nav Bar */
+.account-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.account-nav li {
+  text-align: center;
+  margin: 0 5%;
+  line-height: 1.5;
+}
+
+/* Logo */
+.account-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.account-name {
+  grid-area: 1 / 4 / span 1 / span 2;
+  /* width: 22vw; */
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

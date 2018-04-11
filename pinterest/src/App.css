@@ -48,7 +48,7 @@ article {
   width: 20%;
   background-color: white;
   padding: 5px;
-  border-ratio: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 2px black;
   display: grid;
   grid-template-columns: repeat(3, 33%);
@@ -83,11 +83,37 @@ article {
 }
 
 .top-image-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+  "top_image top_image"
+  "pins top_image";
+  margin-bottom: 5px;
+}
 
+.article_top_images {
+  grid-area: top_image;
+  width: 280px;
+}
+
+.pins {
+  grid-area: pins;
+  align-self: end;
+  width: 5rem;
+  background-color: rgba(0, 0, 0, .5);
+  margin: 5px;
+  padding: 3px;
+  color: #FFF;
 }
 
 .bottom-image-cont {
+  display: flex;
+  justify-content: space-between;
+}
 
+.article_bot_images {
+  width: 90px;
 }
 
 .article_images {

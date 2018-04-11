@@ -28,9 +28,15 @@ export const App = ({boards}) => {
               <h6 className="article-account-name">Self-Dependence</h6>
             </header>
             <section className="article-img-section" role="region">
-              <div className="top-image-cont"><img src="#" className="article_images" alt="Do it yourself" /></div>
-              <div className="bottom-image-cont"><img src="#" className="article_images" alt="Something else" /></div>
-              <div className="bottom-image-cont"><img src="#" className="article_images" alt="Another thing" /></div>
+              <div className="top-image-cont">
+                <img src={require("./images/top1.jpg")} className="article_top_images" alt="Do it yourself" />
+                <span className="pins">&#128204;4,850</span>
+              </div>
+              <div className="bottom-image-cont">
+                <img src={require("./images/bot1a.jpg")} className="article_bot_images" alt="Something else" />
+                <img src={require("./images/bot1b.jpg")} className="article_bot_images" alt="Another thing" />
+                <img src={require("./images/bot1c.jpg")} className="article_bot_images" alt="Another thing" />
+            </div>
             </section>
             <footer className="article-footer" role="contentinfo">
               <button className="follow-btn">Follow</button>

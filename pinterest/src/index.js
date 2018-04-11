@@ -7,7 +7,12 @@ const boards = [
   {
     id: 1,
     topic: "DIY: Tips and Tricks",
-    image: "https://diy.sndimg.com/content/dam/images/diy/fullset/2015/2/17/0/Original-Samantha-Pattillo_Stain-Table-Step2a.jpg.rend.hgtvcom.616.462.suffix/1424225940272.jpeg",
+    images: {
+      top: "./images/top1.jpg",
+      bot1: "./images/bot1a.jpg",
+      bot2: "./images/bot1b.jpg",
+      bot3: "./images/bot1c.jpg"
+    },
     account: {
       name: "Self-Dependence",
       logo: "../public/logo.svg",

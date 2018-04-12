@@ -6,6 +6,7 @@ body {
 
 h1 {
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .app {
@@ -100,11 +101,12 @@ article {
 .pins {
   grid-area: pins;
   align-self: end;
-  width: 5rem;
+  width: 4rem;
   background-color: rgba(0, 0, 0, .5);
   margin: 5px;
-  padding: 3px;
+  padding: 5px;
   color: #FFF;
+  font-size: 1rem;
 }
 
 .bottom-image-cont {
@@ -137,7 +139,6 @@ article {
 }
 
 
-
 /* Nav Bar */
 .account-nav {
   display: flex;
@@ -148,6 +149,19 @@ article {
   text-align: center;
   margin: 0 5%;
   line-height: 1.5;
+}
+
+.account-nav li a {
+  color: #AAA;
+  text-decoration: none;
+}
+
+/* .account-nav li a:visited {
+  color: red;
+} */
+
+.account-nav li a:active {
+  color: blue;
 }
 
 /* Logo */

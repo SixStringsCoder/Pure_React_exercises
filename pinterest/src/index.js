@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.css';
-import { App } from './App';
+import './components/App/App.css';
+import { App } from './components/App/App';
 
 const boards = [
   {
@@ -15,7 +15,7 @@ const boards = [
     },
     account: {
       name: "Self-Dependence",
-      logo: "../public/logo.svg",
+      logo: "./images/logo.svg",
       boards: 56,
       pins: 34590,
       likes: 238,

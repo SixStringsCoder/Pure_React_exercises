@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from '../App/images/logo.svg';
 import '../App/App.css';
 
-export const Account = ({boards}) => {
+export const Account = ({board}) => {
     return (
         <header className="account-header" role="banner" aria-labelled-by="account-name">
           <img src={logo} className="account-logo" alt="logo" />

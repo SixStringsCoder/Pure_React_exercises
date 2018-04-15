@@ -17,7 +17,7 @@ _created by_: Steve Hanlon April 14th, 2018
   - ** use require() function with image link as the argument so WebPack can render them to DOM properly.
 - Final adjustments to CSS
 
-(Note: logo from [wikimedia](https://commons.wikimedia.org/wiki/File:SD-Logo.svg) and all other images from net with non-commercial use license.  Used her just to fulfill and assignment**)
+(Note: logo from [wikimedia](https://commons.wikimedia.org/wiki/File:SD-Logo.svg) and all other images from net with non-commercial use license.  Used here just to fulfill the assignment**)
 
 #### Future Improvements
 - Make responsive layout for smaller screens

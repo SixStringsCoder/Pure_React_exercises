@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../App/images/logo.svg';
+import logo from '../../images/logo.png';
 import '../App/App.css';
 
 export const Account = ({board}) => {

@@ -6,11 +6,13 @@ import { Board } from '../Board/Board'
 export const Boards = ({boards}) => {
     return (
       <main className="boards-container">
-        {
-          boards.map((board, key) =>
-            <Board board={board} key={key} />
-          )
-        }
+        <div className="article_inner_cont">
+          {
+            boards.map((board, key) =>
+              <Board board={board} key={key} />
+            )
+          }
+        </div>  
       </main>
     );
 }

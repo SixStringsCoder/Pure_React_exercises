@@ -20,7 +20,7 @@ h1 {
   grid-area: 1 / 4 / span 1 / span 2;
   text-align: center;
   width: 42vw;
-  height: 23vh;
+  height: 19vh;
   margin-top: 30px;
 }
 
@@ -31,18 +31,24 @@ h1 {
   margin: 3vh 0 0 0;
   box-shadow: 0 6px 4px -4px black;
   border-top: 1px solid #EEE;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid gray;
   padding: 20px 0 35px;
 }
 
 .boards-container {
   grid-area: 3 / 1 / span 1 / span 12;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  justify-content: center;
   /* height: 55vh; */
   background-color: #DDD;
   padding: 20px;
+}
+
+.article_inner_cont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 85%;
 }
 
 /* ==============================
@@ -52,7 +58,7 @@ article {
   width: 20%;
   margin: 20px;
   background-color: white;
-  padding: 5px;
+  padding: 0 10px;
   border-radius: 5px;
   box-shadow: 0 0 2px black;
   display: grid;
@@ -68,7 +74,7 @@ article {
 
 .article-header {
   grid-area: art_header;
-  margin: 5px 5px;
+  margin: 5px 0;
 }
 
 .topic-header {
@@ -99,7 +105,7 @@ article {
 
 .article_top_images {
   grid-area: top_image;
-  width: 280px;
+  width: 100%;
 }
 
 .pins {
@@ -116,14 +122,12 @@ article {
 .bottom-image-cont {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .article_bot_images {
-  width: 90px;
-}
-
-.article_images {
-
+  width: 33%;
+  height: 100%;
 }
 
 /*==============================*/
@@ -133,7 +137,7 @@ article {
 
 .follow-btn {
   width: 100%;
-  margin: 10px 0;
+  margin: 5px 0 10px 0;
   padding: 10px;
   border-radius: 5px;
   color: darkred;
@@ -151,13 +155,22 @@ article {
 
 .account-nav li {
   text-align: center;
-  margin: 0 5%;
+  margin: 0 3%;
   line-height: 1.5;
 }
 
+.account-nav li a span {
+  font-weight: normal;
+}
+
 .account-nav li a {
-  color: #AAA;
+  font-weight:bold;
+  color: #5a5a5a;
   text-decoration: none;
+}
+
+.account-nav li a:hover {
+  text-decoration: underline;
 }
 
 /* .account-nav li a:visited {
@@ -170,8 +183,9 @@ article {
 
 /* Logo */
 .account-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  /* animation: App-logo-spin infinite 20s linear; */
+  margin-bottom: 10px;
+  height: 60px;
 }
 
 .account-name {
@@ -179,7 +193,7 @@ article {
   /* width: 22vw; */
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */

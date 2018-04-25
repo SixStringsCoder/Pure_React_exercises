@@ -57,12 +57,19 @@ const genres = [
 "Bebop",
 "Klesmer",
 "Brazilian Jazz",
-"Bollywood"
+"Bollywood",
+"Garage",
+"Hard Bop",
+"Swing",
+"Mellow",
+"Fingerstyle Guitar",
+"Irish",
+"Classical Indian",
+"Australian Aboriginal",
 ]
 
 
-
 ReactDOM.render(
-  <App />,
+  <App genres={genres} />,
   document.getElementById('root')
 );

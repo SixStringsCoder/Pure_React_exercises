@@ -1,22 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './App.css';
-import hot_icon from 'hot_icon.svg';
+import { Header } from '../Header/Header';
+import { Stations } from '../Stations/Stations';
 
-export const App = (props) => {
+export const App = ({genres}) => {
   return (
-    <main>
-      <header className="heading-bar">
-      <span id="hot-icon">{hot_icon}</span>
-        <h3 className="heading">Popular Genres</h3>
-      </header>
-
-      <section className="genre-area">
-        <a className="genre-link" href="#">
-          <button className="genre-btn">
-            <span className="genre-label">Jazz</span>
-          </button>
-        </a>
-      </section>
+    <main role="main">
+      <Header />
+      <Stations genres={genres} />
     </main>
   );
+}
+
+App.propTypes = {
+  genres: PropTypes.array.isRequired
 }

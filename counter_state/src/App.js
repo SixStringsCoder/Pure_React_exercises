@@ -10,19 +10,18 @@ class CountingParent extends Component {
   handleAction = (action) => {
     console.log("Child did:", action);
     
-    this.setState((state, props) => {
-      return {
-        actionCount: state.actionCount + 1
-      }
-    });
-    console.log(this.state);
+    this.setState({
+        actionCount: this.state.actionCount + 1
+      }, () => {
+        console.log(this.state);
+      });  
   }
   
-  resetCount = (action) => {
-    console.log("Count is reset to 0.");
-    
+  resetCount = (action) => {    
     this.setState({
       actionCount: 0
+    }, () => {
+      console.log(`Count is reset to ${this.state.actionCount}.`);
     });
   }
   

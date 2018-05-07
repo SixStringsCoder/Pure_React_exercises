@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './App.css';
 
 class ControlledInput extends Component {
@@ -44,5 +45,64 @@ class NoNumbers extends Component {
   }
 }
 
+class Select extends Component {
+  state = {
+    name: '',
+    age: '',
+    selection: ''
+  }
+  
+  handleName = (event) => {
+    this.setState({
+      name: event.target.value 
+    });
+  }
+  
+  handleAge = (event) => {
+    this.setState({
+      age: event.target.value 
+    });
+  }
+  
+  handleState = (event) => {
+    this.setState({
+      selection: event.target.value 
+    });
+  }
+  
+  render() {
+    let stateOptions = [
+      {id: 1, value: "", label: "Pick your state." },
+      {id: 2, value: 'MA', label: 'Massachusetts'},
+      {id: 3, value: 'ME', label: 'Maine'},
+      {id: 4, value: 'VT', label: 'Vermont'},
+      {id: 5, value: 'NH', label: 'New Hampshire'},
+      {id: 6, value: 'RI', label: 'Rhode Island'}
+    ];
+    
+    return(
+      <div className="container">  
+        <input className="textBox" type="text"
+          placeholder="Name"
+          value={this.state.name} 
+          onChange={this.handleName} />
+          
+        <input className="textBox" type="number"
+          placeholder="Age"
+          value={this.state.age} 
+          onChange={this.handleAge} />
+          
+        <select value={this.state.selection} onChange={this.handleState}>
+          {stateOptions.map(option =>
+            <option value={option.value} key={option.id}>
+              {option.label}
+            </option>
+            )}
+        </select>
+      </div>  
+    );
+  }
+}
 
-export { ControlledInput, NoNumbers }
+
+export { ControlledInput, NoNumbers, Select }

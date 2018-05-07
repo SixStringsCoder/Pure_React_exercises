@@ -1,16 +1,26 @@
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .textBox {
   height: 1.5rem;
   font-size: 1.2rem;
   border: 2px solid orange;
+  padding: 5px;
+  outline: none;
+}
+
+select {
+  width: 200px;
+  height: 30px;
+  background-color: green;
+  color: #FFF;
+  font-size: .9rem;
   padding: 5px;
   outline: none;
 }

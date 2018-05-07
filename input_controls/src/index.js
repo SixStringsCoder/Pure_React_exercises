@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { ControlledInput, NoNumbers } from './App';
+import { ControlledInput, NoNumbers, Select } from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<NoNumbers />, document.getElementById('root'));
+ReactDOM.render(<Select />, document.getElementById('root'));
 registerServiceWorker();

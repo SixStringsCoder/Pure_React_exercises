@@ -17,7 +17,10 @@ class ControlledInput extends Component {
     return (
       <div className="container">
         <h2>This is a controlled Input</h2>
-        <input className="textBox" type="text" onChange={this.handleChange} value={this.state.text} />
+        <input className="textBox" type="text" 
+          onChange={this.handleChange} 
+          value={this.state.text} 
+          placeholder="See state change as you type."/>
       </div>  
     );
   }
@@ -38,8 +41,11 @@ class NoNumbers extends Component {
   render() {
     return (
       <div className="container">
-        <h2>This is a controlled Input</h2>
-        <input className="textBox" type="text" onChange={this.handleChange} value={this.state.onlyLetters} />
+        <h2>This is a controlled Input using regex to filter out numbers</h2>
+        <input className="textBox" type="text" 
+          onChange={this.handleChange} 
+          value={this.state.onlyLetters}
+          placeholder="Numbers won't show here." />
       </div>
     )
   }
@@ -82,6 +88,7 @@ class Select extends Component {
     
     return(
       <div className="container">  
+      <h2>This is a controlled Input highlighting two inputs and a selector</h2>
         <input className="textBox" type="text"
           placeholder="Name"
           value={this.state.name} 
@@ -104,5 +111,15 @@ class Select extends Component {
   }
 }
 
+const Demo = () => {
+  return (
+    <main>
+      <ControlledInput />
+      <NoNumbers />
+      <Select />
+    </main>  
+  )
+}
 
-export { ControlledInput, NoNumbers, Select }
+
+export { ControlledInput, NoNumbers, Select, Demo }
